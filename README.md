@@ -8,11 +8,21 @@ Progressive Web Application is a text editing application that will continue to 
 
 ## Installation
 
+To install this application, open the Terminal for the main directory of the application. Then to load all the necessary node packages enter npm i in the command line.
 
+![Install Node Packages](./assets/images/Install_packages.png)
+
+To initialize and launch the application enter npm run start into the command line.
+
+![Initialize PWA Text Editor](./assets/images/PWA_Start_App.png)
 
 ## Usage
 
+Once the application has been launched, navigate to http://localhost:3000 in your favorite web browser to start using this application. 
 
+This application is a simple text editor. Simply add text. To fully utilize this application and have persistence regardless of internet connections status click the install button at the top of the webpage.
+
+![PWA Text Editor Install Button](./assets/images/PWA_Install_Button.png)
 
 ## Credits
 
