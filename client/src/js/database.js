@@ -22,13 +22,13 @@ const initdb = async () =>
 export const putDb = async (content) => {
 
   // Create a connection to the database database and version we want to use.
-  const todoDB = await openDB('todos', 1);
+  const todoDB = await openDB(DB_NAME, 1);
 
   // Create a new transaction and specify the database and data privileges.
-  const tx = todoDB.transaction('todos', 'readwrite');
+  const tx = todoDB.transaction(DB_NAME, 'readwrite');
 
   // Open up the desired object store.
-  const store = tx.objectStore('todos');
+  const store = tx.objectStore(DB_NAME);
 
   // Use the .put() method on the store and update the content.
   const request = store.put({ id: 1, value: content });
@@ -42,13 +42,13 @@ export const putDb = async (content) => {
 export const getDb = async () => {
 
   // Create a connection to the database database and version we want to use.
-  const todoDB = await openDB('todos', 1);
+  const todoDB = await openDB(DB_NAME, 1);
 
   // Create a new transaction and specify the database and data privileges.
-  const tx = todoDB.transaction('todos', 'readonly');
+  const tx = todoDB.transaction(DB_NAME, 'readonly');
 
   // Open up the desired object store.
-  const store = tx.objectStore('todos');
+  const store = tx.objectStore(DB_NAME);
 
   // Use the .get() method to get the data for item with id 1.
   const request = store.get(1);
