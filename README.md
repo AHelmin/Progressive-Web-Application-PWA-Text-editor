@@ -24,6 +24,8 @@ This application is a simple text editor. Simply add text. To fully utilize this
 
 ![PWA Text Editor Install Button](./assets/images/PWA_Install_Button.png)
 
+A live version of this application can also be viewed by navigating to this link: https://progressive-web-application-pwa-text.onrender.com. The application should also be installed from this location as well to fully utilize it.
+
 ## Credits
 
 Thanks goes to the University of Minnesota and Edx Bootcamp for providing the assistance needed to complete this project. Special thanks goes to the instructor G Almes for providing additional starter code for this project.
